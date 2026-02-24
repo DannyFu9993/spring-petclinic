@@ -40,7 +40,10 @@ pipeline {
             publishHTML([
                 reportDir: 'target/site/jacoco',
                 reportFiles: 'index.html',
-                reportName: 'JaCoCo Code Coverage Report'
+                reportName: 'JaCoCo Code Coverage Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
             ])
         }
         failure {
