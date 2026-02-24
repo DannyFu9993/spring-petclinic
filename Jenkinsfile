@@ -9,7 +9,7 @@ pipeline {
     
     triggers {
         // Trigger every 5 minutes on Mondays
-        pollSCM('H/5 * * * 1')
+        pollSCM('H/2 * * * *')
     }
     
     stages {
