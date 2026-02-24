@@ -4,7 +4,7 @@ pipeline {
     tools {
         // This tells Jenkins to use the Maven installation you configured
         maven 'Maven'  // Must match the name you gave in Global Tool Configuration
-        jdk 'JDK 17'   // Must match the JDK name in Global Tool Configuration
+        jdk 'JDK 21'   // Must match the JDK name in Global Tool Configuration
     }
     
     triggers {
